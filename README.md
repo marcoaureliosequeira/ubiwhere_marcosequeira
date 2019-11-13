@@ -15,6 +15,14 @@
     - Criar a classe do modelo
     - python manage.py makemigrations
     - python manage.py migrate
+    
+    Nota: Desenvolvi o exercício em Mac e associei o utilizador do computador ao Postgres, contudo, depois criei um outro:
+    	- su - (utilizador)
+	- createuser --interactive --pwprompt
+	- username: marcosequeira
+	- password: 123456
+	- Shall the new role be a superuser? y
+    
 - Silk
     - pip install django-silk
     - settings.py
