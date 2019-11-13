@@ -62,7 +62,7 @@
 
     - Validar
         - PUT
-	- http://localhost:8000/sensorData/validate/{id do registo}/
+		- http://localhost:8000/sensorData/validate/{id do registo}/
 
 
 # Modelo de dados
