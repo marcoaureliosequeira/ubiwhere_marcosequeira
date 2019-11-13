@@ -33,36 +33,37 @@
 		‘silk’
 	     …]
     - 
-        - 
 
 # Endpoints
-    - Criar registo
-        - POST
-        - http://localhost:8000/sensorData/create/
-            - Form data
-                - description (descrição do registo)
-                - geo_location (localização do registo)
-                - created_by (quem está a inserir o registo)
-                - state (0-Não validado; 1- Validado; 2- Resolvido)
-                - category (CONSTRUCTION, SPECIAL_EVENT, INCIDENT, WEATHER_CONDITION, ROAD_CONDITION) 
-                - created_at (data em que o registo está a ser criado)
-                - updated_at (data em que o registo é alterado)
 
     - Listar por autor
         - GET
-        - http://localhost:8000/sensorData/list/author/{nome do autor}/
+        	- http://localhost:8000/sensorData/list/author/{nome do autor}/
 
     - Listar por localização
         - GET
-        - http://localhost:8000/sensorData/list/location/{valor da localização}/
+        	- http://localhost:8000/sensorData/list/location/{valor da localização}/
 
     - Listar por categoria
         - GET
-        - http://localhost:8000/sensorData/list/category/{valor da categoria}/
+        	- http://localhost:8000/sensorData/list/category/{valor da categoria}/
 
     - Validar
         - PUT
 		- http://localhost:8000/sensorData/validate/{id do registo}/
+		
+    - Criar registo
+        - POST
+		- http://localhost:8000/sensorData/create/
+		- Dados do pedido
+			- description: varchar (255) - não obrigatório -> descrição do registo
+			- geo_location: varchar (255) - não obrigatório -> localização do registo
+			- created_by: text - não obrigatório -> quem está a inserir o registo
+			- state: int - não obrigatório (default: 0) -> 0-Não validado; 1- Validado; 2- Resolvido
+			- category: varchar (255) - não obrigatório -> CONSTRUCTION, SPECIAL_EVENT, INCIDENT, WEATHER_CONDITION, ROAD_CONDITION
+			- created_at: datetime - não obrigatório (default: now()) -> data em que o registo está a ser criado
+			- updated_at: datetime - não obrigatório (default: now()) -> data em que o registo é alterado
+		
 
 
 # Modelo de dados
@@ -72,6 +73,7 @@ Dado o exercício tentei simplificar ao máximo e daí resumi tudo a uma única 
     - description: varchar (255)
     - geo_location: varchar (255)
     - created_by: text
+    - state: int
     - category: varchar (255)
     - created_at: datetime
     - updated_at: datetime
