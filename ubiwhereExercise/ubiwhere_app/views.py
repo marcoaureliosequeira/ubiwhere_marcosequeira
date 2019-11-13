@@ -30,6 +30,9 @@ class DataFromSensorViewSet(viewsets.ModelViewSet):
     queryset = DataFromSensor.objects.all()
     serializer_class = DataFromSensorSerializer
 
+    #LIST SENSOR DATA BY AUTHOR
+    #RECEIVE: AUTHOR NAME
+    #RETURN: DataFromSensor SERIALIZER
     @action(detail=True, methods=['get'], name='listByAuthor')
     def listByAuthor(self, request, author):
         try:
@@ -43,8 +46,11 @@ class DataFromSensorViewSet(viewsets.ModelViewSet):
             return self.get_paginated_response(serializer.data)
 
         serializer = self.get_serializer(sensorData, many=True)
-        return serializer.data\
+        return serializer.data
 
+    # LIST SENSOR DATA BY CATEGORY
+    # RECEIVE: CATEGORY NAME
+    # RETURN: DataFromSensor SERIALIZER
     @action(detail=True, methods=['get'], name='listByCategory')
     def listByCategory(self, request, category):
         try:
@@ -60,6 +66,9 @@ class DataFromSensorViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(sensorData, many=True)
         return serializer.data
 
+    # LIST SENSOR DATA BY LOCATION
+    # RECEIVE: LOCATION VALUE
+    # RETURN: DataFromSensor SERIALIZER
     @action(detail=True, methods=['get'], name='listByLocation')
     def listByLocation(self, request, location):
         try:
@@ -75,6 +84,9 @@ class DataFromSensorViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(sensorData, many=True)
         return serializer.data
 
+    # VALIDATE SENSOR DATA
+    # RECEIVE: ID OF DATA RECORD
+    # RETURN: DataFromSensor SERIALIZER
     @action(detail=True, methods=['put'], name='validate')
     def validate(self, request, dataId):
         try:

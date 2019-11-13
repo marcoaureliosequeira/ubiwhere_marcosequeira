@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93d2f7b3-be2c-43f2-96b4-59576ab146ad" name="Default Changelist" comment="" />
+    <list default="true" id="93d2f7b3-be2c-43f2-96b4-59576ab146ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ubiwhere_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ubiwhere_app/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/silk" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1TIugIMvHO8luzUo3OUhAkuazEh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -92,6 +96,7 @@
       <workItem from="1573409611661" duration="6661000" />
       <workItem from="1573597867793" duration="1346000" />
       <workItem from="1573672571060" duration="2663000" />
+      <workItem from="1573679911575" duration="21000" />
     </task>
     <servers />
   </component>
