@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "845abd49-3440-451f-8c0c-6d509d5f7b62",
+		"name": "ubiwhereExercise",
+		"description": "ubiwhereExercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listByAuthor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/sensorData/list/author/Manuel/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sensorData",
+						"list",
+						"author",
+						"Manuel",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listByLocation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/sensorData/list/location/geo/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sensorData",
+						"list",
+						"location",
+						"geo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listByCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/sensorData/list/category/CONSTRUCTION/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sensorData",
+						"list",
+						"category",
+						"CONSTRUCTION",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dataId",
+							"value": "6",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/sensorData/validate/9/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sensorData",
+						"validate",
+						"9",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "descrição",
+							"type": "text"
+						},
+						{
+							"key": "geo_location",
+							"value": "geo",
+							"type": "text"
+						},
+						{
+							"key": "created_by",
+							"value": "Manuel",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "CONSTRUCTION",
+							"type": "text"
+						},
+						{
+							"key": "created_at",
+							"value": "2019-11-11 11:01:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "updated_at",
+							"value": "2019-11-11 11:01:00",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/sensorData/create/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sensorData",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
