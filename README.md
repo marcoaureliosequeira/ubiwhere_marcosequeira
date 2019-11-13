@@ -60,9 +60,9 @@
         - GET
         - http://localhost:8000/sensorData/list/category/{valor da categoria}/
 
-- Validar
-    - PUT
-		- http://localhost:8000/sensorData/validate/{id do registo}/
+    - Validar
+        - PUT
+	- http://localhost:8000/sensorData/validate/{id do registo}/
 
 
 # Modelo de dados
